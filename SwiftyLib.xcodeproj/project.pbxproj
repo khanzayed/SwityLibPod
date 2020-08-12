@@ -14,6 +14,7 @@
 		D0C347CD24E407F000D7F699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C347CB24E407F000D7F699 /* Main.storyboard */; };
 		D0C347CF24E407F100D7F699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C347CE24E407F100D7F699 /* Assets.xcassets */; };
 		D0C347D224E407F100D7F699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C347D024E407F100D7F699 /* LaunchScreen.storyboard */; };
+		D0C347DD24E40B6700D7F699 /* AnalyticsHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C347DC24E40B6700D7F699 /* AnalyticsHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		D0C347CE24E407F100D7F699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0C347D124E407F100D7F699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0C347D324E407F100D7F699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0C347DB24E40B4900D7F699 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		D0C347DC24E40B6700D7F699 /* AnalyticsHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsHome.swift; sourceTree = "<group>"; };
+		D0C347DE24E40B9200D7F699 /* SwiftyLib.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftyLib.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +74,10 @@
 			isa = PBXGroup;
 			children = (
 				D0C3479724E4075300D7F699 /* SwiftyLib.h */,
+				D0C347DE24E40B9200D7F699 /* SwiftyLib.podspec */,
 				D0C3479824E4075300D7F699 /* Info.plist */,
+				D0C347DB24E40B4900D7F699 /* LICENSE */,
+				D0C347DC24E40B6700D7F699 /* AnalyticsHome.swift */,
 			);
 			path = SwiftyLib;
 			sourceTree = "<group>";
@@ -150,6 +157,7 @@
 				TargetAttributes = {
 					D0C3479324E4075300D7F699 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					D0C347C224E407F000D7F699 = {
 						CreatedOnToolsVersion = 11.6;
@@ -200,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C347DD24E40B6700D7F699 /* AnalyticsHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +367,7 @@
 		D0C3479D24E4075300D7F699 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 85PRRDP9ML;
@@ -374,6 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.SwiftyLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,6 +393,7 @@
 		D0C3479E24E4075300D7F699 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 85PRRDP9ML;
